@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="2">
+<title>Smart Parking Dashboard</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px;background:#f6f8fb;color:#222}h1{margin:0 0 16px} .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0 20px} .card{background:#fff;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.06);padding:16px} .muted{color:#666;font-size:14px} table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)} th,td{padding:10px 12px;border-bottom:1px solid #eee;text-align:left} th{background:#f1f4f9} .bar{height:12px;border-radius:6px;background:#e9eef7;overflow:hidden} .fill{height:100%;background:#4f46e5} .status{font-size:12px;padding:2px 8px;border-radius:999px;display:inline-block} .ok{background:#e7f7ee;color:#0f7b3f} .gone{background:#fdecec;color:#b42318}</style>
+</head>
+<body>
+<h1>Smart Parking Dashboard</h1>
+<p class="muted">Capacity: 10 &middot; Occupied: 3 &middot; Available: 7</p>
+<div class="cards">
+<div class="card"><div class="muted">Cars</div><div style="font-size:28px;font-weight:700">1</div></div>
+<div class="card"><div class="muted">Bikes</div><div style="font-size:28px;font-weight:700">1</div></div>
+<div class="card"><div class="muted">Trucks</div><div style="font-size:28px;font-weight:700">1</div></div>
+<div class="card"><div class="muted">Active</div><div style="font-size:28px;font-weight:700">2</div></div>
+</div>
+<div class="card"><div class="muted">Usage</div><div class="bar"><div class="fill" style="width:30%"></div></div><div class="muted" style="margin-top:6px">30% occupied</div></div><h2 style="margin-top:24px">Vehicles</h2>
+<table>
+<thead><tr><th>#</th><th>Type</th><th>Plate</th><th>Owner</th><th>Entry</th><th>Status</th><th>Exit</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Bike</td><td>4676</td><td>bb</td><td>2025-10-31 16:33:59</td><td><span class=\"status gone\">Exited</span></td><td>2025-10-31 16:35:08</td></tr>
+<tr><td>2</td><td>Car</td><td>8747</td><td>pappa</td><td>2025-10-31 16:34:15</td><td><span class=\"status ok\">Parked</span></td><td>-</td></tr>
+<tr><td>3</td><td>Truck</td><td>7372</td><td>rohan</td><td>2025-10-31 16:34:30</td><td><span class=\"status ok\">Parked</span></td><td>-</td></tr>
+</tbody></table>
+<p class="muted" style="margin-top:10px">Generated on: Fri Oct 31 16:35:19 2025
+</p>
+</body></html>
